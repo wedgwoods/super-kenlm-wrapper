@@ -4,4 +4,7 @@ import static kenlm.KenlmJNI.*;
 
 
 /**
- * Wrapper around lm::ngram::Confi
+ * Wrapper around lm::ngram::Config.
+ * Pass this to Model's constructor to set the load_method.
+ */
+p
