@@ -9,4 +9,8 @@ import static kenlm.KenlmJNI.*;
  */
 public class Config {
 
-    private final long _c_confi
+    private final long _c_config;
+
+    public Config() {
+        this._c_config = ConfigNew();
+      
