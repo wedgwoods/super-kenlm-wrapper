@@ -28,4 +28,8 @@ public class Config {
         return _c_config;
     }
 
-    private static class Deallocator implem
+    private static class Deallocator implements Runnable {
+
+        private long address;
+
+   
