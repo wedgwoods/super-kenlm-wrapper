@@ -20,4 +20,5 @@ public class Config {
         return LoadMethod.values()[ConfigGetLoadMethod(_c_config)];
     }
 
-    public void setLoadM
+    public void setLoadMethod(LoadMethod loadMethod) {
+        ConfigSetLoadMethod(_c_config, loadMeth
