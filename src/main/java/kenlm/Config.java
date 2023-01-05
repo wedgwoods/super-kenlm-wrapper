@@ -21,4 +21,8 @@ public class Config {
     }
 
     public void setLoadMethod(LoadMethod loadMethod) {
-        ConfigSetLoadMethod(_c_config, loadMeth
+        ConfigSetLoadMethod(_c_config, loadMethod.ordinal());
+    }
+
+    long getCConfig() {
+        return _c
