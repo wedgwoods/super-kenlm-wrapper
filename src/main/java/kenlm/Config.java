@@ -25,4 +25,7 @@ public class Config {
     }
 
     long getCConfig() {
-        return _c
+        return _c_config;
+    }
+
+    private static class Deallocator implem
