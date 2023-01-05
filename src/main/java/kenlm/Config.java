@@ -13,4 +13,8 @@ public class Config {
 
     public Config() {
         this._c_config = ConfigNew();
-        CleanerUtil.createAndRegister(this, new Deallocator(_c_config)
+        CleanerUtil.createAndRegister(this, new Deallocator(_c_config));
+    }
+
+    public LoadMethod getLoadMethod() {
+        return LoadMethod.values()
