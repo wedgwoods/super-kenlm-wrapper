@@ -33,4 +33,8 @@ public class Config {
         private long address;
 
         private Deallocator(long address) {
-            assert (address 
+            assert (address != 0);
+            this.address = address;
+        }
+
+        @Override
