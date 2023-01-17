@@ -38,3 +38,6 @@ public class Config {
         }
 
         @Override
+        public void run() {
+            if (address == 0) {
+             
