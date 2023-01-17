@@ -40,4 +40,7 @@ public class Config {
         @Override
         public void run() {
             if (address == 0) {
-             
+                // Paranoia
+                return;
+            }
+            ConfigDe
