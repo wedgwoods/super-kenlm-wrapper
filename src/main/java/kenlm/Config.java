@@ -43,4 +43,7 @@ public class Config {
                 // Paranoia
                 return;
             }
-            ConfigDe
+            ConfigDelete(address);
+        }
+    }
+}
