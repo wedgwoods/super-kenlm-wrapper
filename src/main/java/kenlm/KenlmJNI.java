@@ -6,4 +6,5 @@ class KenlmJNI {
 
     static {
         try {
-            System.load(NativeLibLoader.createTempFileFro
+            System.load(NativeLibLoader.createTempFileFromResource("/" + System.mapLibraryName("kenlm_jni")));
+        } catch (IOException e) {
