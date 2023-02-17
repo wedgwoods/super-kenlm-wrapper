@@ -8,3 +8,4 @@ class KenlmJNI {
         try {
             System.load(NativeLibLoader.createTempFileFromResource("/" + System.mapLibraryName("kenlm_jni")));
         } catch (IOException e) {
+            throw new UnsatisfiedLinkError(e.getMessage())
