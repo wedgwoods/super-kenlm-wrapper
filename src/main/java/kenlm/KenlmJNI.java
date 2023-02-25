@@ -14,4 +14,6 @@ class KenlmJNI {
 
     static native long ConfigNew();
     static native void ConfigDelete(long c);
-    static native int ConfigGetLoadMetho
+    static native int ConfigGetLoadMethod(long c);
+    static native void ConfigSetLoadMethod(long c, int load_method);
+
