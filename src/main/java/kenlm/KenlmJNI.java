@@ -17,3 +17,4 @@ class KenlmJNI {
     static native int ConfigGetLoadMethod(long c);
     static native void ConfigSetLoadMethod(long c, int load_method);
 
+    static native long ModelLoadVirtual(String path, long confi
