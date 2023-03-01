@@ -20,4 +20,5 @@ class KenlmJNI {
     static native long ModelLoadVirtual(String path, long config);
     static native void ModelDelete(long model);
 
-   
+    static native void ModelBeginSentenceWrite(long model, long state);
+    stati
