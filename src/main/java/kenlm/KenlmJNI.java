@@ -21,4 +21,6 @@ class KenlmJNI {
     static native void ModelDelete(long model);
 
     static native void ModelBeginSentenceWrite(long model, long state);
-    stati
+    static native void ModelNullContextWrite(long model, long state);
+
+    static nati
