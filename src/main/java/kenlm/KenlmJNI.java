@@ -23,4 +23,5 @@ class KenlmJNI {
     static native void ModelBeginSentenceWrite(long model, long state);
     static native void ModelNullContextWrite(long model, long state);
 
-    static native float ModelBaseScore(long model, long state, String word, long out_state)
+    static native float ModelBaseScore(long model, long state, String word, long out_state);
+    static native byte[] ModelBaseFullScore(long model, long state, String w
