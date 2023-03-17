@@ -28,4 +28,4 @@ class KenlmJNI {
 
     static native float ModelScore(long model, String sentence, boolean bos, boolean eos);
     static native double ModelPerplexity(long model, String sentence);
-    static nat
+    static native byte[] ModelFullScores(long model, String sentence, bool
