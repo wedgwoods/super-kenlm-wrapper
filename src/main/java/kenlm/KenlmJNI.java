@@ -32,4 +32,5 @@ class KenlmJNI {
 
     static native long StateNew();
     static native void StateDelete(long s);
-    static native int StateComp
+    static native int StateCompare(long s1, long s2);
+    static native boolean StateEquals(long 
