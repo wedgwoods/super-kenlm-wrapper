@@ -30,4 +30,6 @@ class KenlmJNI {
     static native double ModelPerplexity(long model, String sentence);
     static native byte[] ModelFullScores(long model, String sentence, boolean bos, boolean eos);
 
-    static native long StateNew(
+    static native long StateNew();
+    static native void StateDelete(long s);
+    static native int StateComp
