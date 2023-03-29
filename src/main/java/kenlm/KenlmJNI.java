@@ -35,3 +35,4 @@ class KenlmJNI {
     static native int StateCompare(long s1, long s2);
     static native boolean StateEquals(long s1, long s2);
     static native long StateHashValue(long s);
+}
