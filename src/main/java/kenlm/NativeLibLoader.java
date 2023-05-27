@@ -9,4 +9,4 @@ class NativeLibLoader {
      * <p/>
      * The file from JAR is copied into system temp file.
      * The temporary file is deleted after exiting.
-     * Me
+     * Method uses String as filename because the pathname is "abstract", not system-d
