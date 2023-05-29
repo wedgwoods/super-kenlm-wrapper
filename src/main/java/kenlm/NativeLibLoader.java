@@ -12,4 +12,6 @@ class NativeLibLoader {
      * Method uses String as filename because the pathname is "abstract", not system-dependent.
      * <p/>
      * The restrictions of {@link File#createTempFile(java.lang.String, java.lang.String)} apply to
-     * {
+     * {@code path}.
+     * @param path Path to the resources in the jar
+     * @
