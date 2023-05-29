@@ -11,4 +11,5 @@ class NativeLibLoader {
      * The temporary file is deleted after exiting.
      * Method uses String as filename because the pathname is "abstract", not system-dependent.
      * <p/>
-     * The restrictions of {@link File#createTe
+     * The restrictions of {@link File#createTempFile(java.lang.String, java.lang.String)} apply to
+     * {
