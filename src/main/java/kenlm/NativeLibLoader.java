@@ -14,4 +14,5 @@ class NativeLibLoader {
      * The restrictions of {@link File#createTempFile(java.lang.String, java.lang.String)} apply to
      * {@code path}.
      * @param path Path to the resources in the jar
-     * @
+     * @return The created temp file.
+     * @throws IOException When the temp file could
