@@ -15,4 +15,5 @@ class NativeLibLoader {
      * {@code path}.
      * @param path Path to the resources in the jar
      * @return The created temp file.
-     * @throws IOException When the temp file could
+     * @throws IOException When the temp file could not be created
+     * @throws IllegalArgumentException When the file name contains 
