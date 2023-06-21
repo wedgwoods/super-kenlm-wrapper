@@ -18,4 +18,5 @@ class NativeLibLoader {
      * @throws IOException When the temp file could not be created
      * @throws IllegalArgumentException When the file name contains invalid letters
      */
-    static String createTempFileFromResourc
+    static String createTempFileFromResource(String path) throws IOException, IllegalArgumentException {
+        // Obta
