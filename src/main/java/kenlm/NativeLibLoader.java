@@ -19,4 +19,6 @@ class NativeLibLoader {
      * @throws IllegalArgumentException When the file name contains invalid letters
      */
     static String createTempFileFromResource(String path) throws IOException, IllegalArgumentException {
-        // Obta
+        // Obtain filename from path
+        if (!path.startsWith("/")) {
+      
