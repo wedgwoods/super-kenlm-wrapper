@@ -21,4 +21,7 @@ class NativeLibLoader {
     static String createTempFileFromResource(String path) throws IOException, IllegalArgumentException {
         // Obtain filename from path
         if (!path.startsWith("/")) {
-            throw new IllegalArgumentException("The path has to be abso
+            throw new IllegalArgumentException("The path has to be absolute (start with '/').");
+        }
+
+        String[] parts = path.
