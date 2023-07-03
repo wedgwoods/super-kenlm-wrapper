@@ -21,4 +21,4 @@ class NativeLibLoader {
     static String createTempFileFromResource(String path) throws IOException, IllegalArgumentException {
         // Obtain filename from path
         if (!path.startsWith("/")) {
-      
+            throw new IllegalArgumentException("The path has to be abso
