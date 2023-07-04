@@ -24,4 +24,5 @@ class NativeLibLoader {
             throw new IllegalArgumentException("The path has to be absolute (start with '/').");
         }
 
-        String[] parts = path.
+        String[] parts = path.split("/");
+        String filename = (parts.length > 1) ? parts[pa
