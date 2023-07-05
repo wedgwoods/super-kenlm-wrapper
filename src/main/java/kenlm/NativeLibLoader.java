@@ -29,4 +29,6 @@ class NativeLibLoader {
 
         // Split filename to prexif and suffix (extension)
         String prefix = "";
-        String suffix = 
+        String suffix = null;
+        if (filename != null) {
+            parts = filename.sp
