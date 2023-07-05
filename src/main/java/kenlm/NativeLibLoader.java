@@ -31,4 +31,6 @@ class NativeLibLoader {
         String prefix = "";
         String suffix = null;
         if (filename != null) {
-            parts = filename.sp
+            parts = filename.split("\\.", 2);
+            prefix = parts[0];
+            suffix = (parts.length > 
