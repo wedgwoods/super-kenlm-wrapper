@@ -25,4 +25,6 @@ class NativeLibLoader {
         }
 
         String[] parts = path.split("/");
-        String filename = (parts.length > 1) ? parts[pa
+        String filename = (parts.length > 1) ? parts[parts.length - 1] : null;
+
+        // Split filename to prexif and
