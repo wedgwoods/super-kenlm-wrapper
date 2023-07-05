@@ -37,4 +37,5 @@ class NativeLibLoader {
         }
 
         // Check if the filename is okay
-        if (filename ==
+        if (filename == null || prefix.length() < 3) {
+            throw new IllegalArgumentEx
