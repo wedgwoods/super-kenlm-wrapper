@@ -38,4 +38,4 @@ class NativeLibLoader {
 
         // Check if the filename is okay
         if (filename == null || prefix.length() < 3) {
-            throw new IllegalArgumentEx
+            throw new IllegalArgumentException("The filename has to be at least 3 characters long.");
