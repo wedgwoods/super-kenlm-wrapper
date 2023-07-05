@@ -27,4 +27,6 @@ class NativeLibLoader {
         String[] parts = path.split("/");
         String filename = (parts.length > 1) ? parts[parts.length - 1] : null;
 
-        // Split filename to prexif and
+        // Split filename to prexif and suffix (extension)
+        String prefix = "";
+        String suffix = 
