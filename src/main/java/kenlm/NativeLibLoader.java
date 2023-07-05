@@ -34,4 +34,7 @@ class NativeLibLoader {
             parts = filename.split("\\.", 2);
             prefix = parts[0];
             suffix = (parts.length > 1) ? "." + parts[parts.length - 1] : null; // Thanks, davs! :-)
-      
+        }
+
+        // Check if the filename is okay
+        if (filename ==
