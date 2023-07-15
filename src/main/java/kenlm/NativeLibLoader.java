@@ -44,4 +44,5 @@ class NativeLibLoader {
         File temp = File.createTempFile(prefix, suffix);
         temp.deleteOnExit();
 
-        if
+        if (!temp.exists()) {
+            throw new FileNotFoundException("File " + 
