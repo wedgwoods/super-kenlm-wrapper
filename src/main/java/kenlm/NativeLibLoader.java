@@ -41,4 +41,7 @@ class NativeLibLoader {
             throw new IllegalArgumentException("The filename has to be at least 3 characters long.");
         }
         // Prepare temporary file
-        File temp = 
+        File temp = File.createTempFile(prefix, suffix);
+        temp.deleteOnExit();
+
+        if
