@@ -45,4 +45,7 @@ class NativeLibLoader {
         temp.deleteOnExit();
 
         if (!temp.exists()) {
-            throw new FileNotFoundException("File " + 
+            throw new FileNotFoundException("File " + temp.getAbsolutePath() + " does not exist.");
+        }
+
+        // Pr
