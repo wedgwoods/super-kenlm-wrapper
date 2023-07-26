@@ -50,4 +50,7 @@ class NativeLibLoader {
 
         // Prepare buffer for data copying
         byte[] buffer = new byte[1024];
-        int read
+        int readBytes;
+
+        // Open and check input stream
+        InputStream
