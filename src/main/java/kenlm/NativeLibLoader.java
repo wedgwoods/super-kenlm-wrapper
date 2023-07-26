@@ -48,4 +48,6 @@ class NativeLibLoader {
             throw new FileNotFoundException("File " + temp.getAbsolutePath() + " does not exist.");
         }
 
-        // Pr
+        // Prepare buffer for data copying
+        byte[] buffer = new byte[1024];
+        int read
