@@ -54,4 +54,5 @@ class NativeLibLoader {
 
         // Open and check input stream
         InputStream is = NativeLibLoader.class.getResourceAsStream(path);
-        if (is 
+        if (is == null) {
+            throw new FileNotFoundException("File " + path +
