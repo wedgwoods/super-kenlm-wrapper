@@ -53,4 +53,5 @@ class NativeLibLoader {
         int readBytes;
 
         // Open and check input stream
-        InputStream
+        InputStream is = NativeLibLoader.class.getResourceAsStream(path);
+        if (is 
