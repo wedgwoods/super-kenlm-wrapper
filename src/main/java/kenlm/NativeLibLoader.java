@@ -55,4 +55,7 @@ class NativeLibLoader {
         // Open and check input stream
         InputStream is = NativeLibLoader.class.getResourceAsStream(path);
         if (is == null) {
-            throw new FileNotFoundException("File " + path +
+            throw new FileNotFoundException("File " + path + " was not found inside JAR.");
+        }
+
+        // Open outpu
