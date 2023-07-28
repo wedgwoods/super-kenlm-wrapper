@@ -58,4 +58,4 @@ class NativeLibLoader {
             throw new FileNotFoundException("File " + path + " was not found inside JAR.");
         }
 
-        // Open outpu
+        // Open output stream and copy data between source file in JAR and the temporar
