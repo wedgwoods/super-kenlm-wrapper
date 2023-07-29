@@ -65,4 +65,7 @@ class NativeLibLoader {
                 os.write(buffer, 0, readBytes);
             }
         } finally {
-            // If read/write fails, close streams safely before throwing an exceptio
+            // If read/write fails, close streams safely before throwing an exception
+            os.close();
+            is.close();
+    
