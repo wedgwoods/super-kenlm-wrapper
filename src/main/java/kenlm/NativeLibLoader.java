@@ -68,4 +68,7 @@ class NativeLibLoader {
             // If read/write fails, close streams safely before throwing an exception
             os.close();
             is.close();
-    
+        }
+        return temp.getAbsolutePath();
+    }
+}
