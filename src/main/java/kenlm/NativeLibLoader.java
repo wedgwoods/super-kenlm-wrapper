@@ -61,4 +61,5 @@ class NativeLibLoader {
         // Open output stream and copy data between source file in JAR and the temporary file
         OutputStream os = new FileOutputStream(temp);
         try {
-        
+            while ((readBytes = is.read(buffer)) != -1) {
+                os.write(buffer, 0, read
