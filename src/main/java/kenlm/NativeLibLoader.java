@@ -62,4 +62,7 @@ class NativeLibLoader {
         OutputStream os = new FileOutputStream(temp);
         try {
             while ((readBytes = is.read(buffer)) != -1) {
-                os.write(buffer, 0, read
+                os.write(buffer, 0, readBytes);
+            }
+        } finally {
+            // If read/write
