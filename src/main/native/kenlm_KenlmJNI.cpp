@@ -4,4 +4,5 @@
 #include "lm/config.hh"
 #include "lm/model.hh"
 
-inline s
+inline static int32_t getIntB(const int8_t *bb, int bi) {
+    return (((bb[b
