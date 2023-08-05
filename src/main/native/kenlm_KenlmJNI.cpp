@@ -5,4 +5,6 @@
 #include "lm/model.hh"
 
 inline static int32_t getIntB(const int8_t *bb, int bi) {
-    return (((bb[b
+    return (((bb[bi    ]       ) << 24) |
+            ((bb[bi + 1] & 0xff) << 16) |
+            ((bb[bi + 2
