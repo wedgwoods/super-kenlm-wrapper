@@ -11,4 +11,5 @@ inline static int32_t getIntB(const int8_t *bb, int bi) {
             ((bb[bi + 3] & 0xff)      ));
 }
 
-inline stati
+inline static void putIntB(int8_t *bb, int bi, int32_t x) {
+    bb[bi    ] = static_
