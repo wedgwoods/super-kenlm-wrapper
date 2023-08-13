@@ -12,4 +12,5 @@ inline static int32_t getIntB(const int8_t *bb, int bi) {
 }
 
 inline static void putIntB(int8_t *bb, int bi, int32_t x) {
-    bb[bi    ] = static_
+    bb[bi    ] = static_cast<int8_t>(x >> 24);
+    bb[bi + 1] = static_cast<int8_t>(x >> 
