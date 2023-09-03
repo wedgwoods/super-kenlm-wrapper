@@ -15,4 +15,7 @@ inline static void putIntB(int8_t *bb, int bi, int32_t x) {
     bb[bi    ] = static_cast<int8_t>(x >> 24);
     bb[bi + 1] = static_cast<int8_t>(x >> 16);
     bb[bi + 2] = static_cast<int8_t>(x >>  8);
- 
+    bb[bi + 3] = static_cast<int8_t>(x      );
+}
+
+inline sta
