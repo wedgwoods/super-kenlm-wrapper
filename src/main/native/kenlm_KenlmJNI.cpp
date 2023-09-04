@@ -18,4 +18,5 @@ inline static void putIntB(int8_t *bb, int bi, int32_t x) {
     bb[bi + 3] = static_cast<int8_t>(x      );
 }
 
-inline sta
+inline static int64_t getLongB(const int8_t *bb, int bi) {
+    return ((((
