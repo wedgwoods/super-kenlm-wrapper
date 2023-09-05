@@ -19,4 +19,5 @@ inline static void putIntB(int8_t *bb, int bi, int32_t x) {
 }
 
 inline static int64_t getLongB(const int8_t *bb, int bi) {
-    return ((((
+    return ((((long)bb[bi    ]       ) << 56) |
+            (((long)bb[bi + 1] & 0
