@@ -26,4 +26,7 @@ inline static int64_t getLongB(const int8_t *bb, int bi) {
             (((long)bb[bi + 4] & 0xff) << 25) |
             (((long)bb[bi + 5] & 0xff) << 16) |
             (((long)bb[bi + 6] & 0xff) <<  8) |
-   
+            (((long)bb[bi + 7] & 0xff)      ));
+}
+
+inline static void 
