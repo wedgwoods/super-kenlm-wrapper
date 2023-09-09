@@ -29,4 +29,5 @@ inline static int64_t getLongB(const int8_t *bb, int bi) {
             (((long)bb[bi + 7] & 0xff)      ));
 }
 
-inline static void 
+inline static void putLongB(int8_t *bb, int bi, int64_t x) {
+    bb[bi    ] = static
