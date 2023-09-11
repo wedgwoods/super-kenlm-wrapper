@@ -34,4 +34,6 @@ inline static void putLongB(int8_t *bb, int bi, int64_t x) {
     bb[bi + 1] = static_cast<int8_t>(x >> 48);
     bb[bi + 2] = static_cast<int8_t>(x >> 40);
     bb[bi + 3] = static_cast<int8_t>(x >> 32);
-    bb[bi + 4] = static_cast<int8_t>(x >> 2
+    bb[bi + 4] = static_cast<int8_t>(x >> 24);
+    bb[bi + 5] = static_cast<int8_t>(x >> 16);
+    bb[bi +
