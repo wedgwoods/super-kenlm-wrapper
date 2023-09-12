@@ -38,3 +38,7 @@ inline static void putLongB(int8_t *bb, int bi, int64_t x) {
     bb[bi + 5] = static_cast<int8_t>(x >> 16);
     bb[bi + 6] = static_cast<int8_t>(x >>  8);
     bb[bi + 7] = static_cast<int8_t>(x      );
+}
+
+inline static float_t getFloatB(const int8_t *bb, int bi) {
+    int32_
