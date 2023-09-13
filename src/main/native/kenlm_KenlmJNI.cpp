@@ -41,4 +41,5 @@ inline static void putLongB(int8_t *bb, int bi, int64_t x) {
 }
 
 inline static float_t getFloatB(const int8_t *bb, int bi) {
-    int32_
+    int32_t i = getIntB(bb, bi);
+    return *reinterpret_cast
