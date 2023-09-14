@@ -42,4 +42,7 @@ inline static void putLongB(int8_t *bb, int bi, int64_t x) {
 
 inline static float_t getFloatB(const int8_t *bb, int bi) {
     int32_t i = getIntB(bb, bi);
-    return *reinterpret_cast
+    return *reinterpret_cast<float_t *>(&i);
+}
+
+inline static void putFloatB(int8_t *bb, int bi, f
