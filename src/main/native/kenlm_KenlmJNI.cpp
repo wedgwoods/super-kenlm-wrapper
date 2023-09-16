@@ -47,4 +47,7 @@ inline static float_t getFloatB(const int8_t *bb, int bi) {
 
 inline static void putFloatB(int8_t *bb, int bi, float_t x) {
     int32_t i = *reinterpret_cast<int32_t *>(&x);
-  
+    putIntB(bb, bi, i);
+}
+
+static const int FullScoreReturnSize = 
