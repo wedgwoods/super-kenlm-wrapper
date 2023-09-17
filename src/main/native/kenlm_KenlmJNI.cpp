@@ -50,4 +50,6 @@ inline static void putFloatB(int8_t *bb, int bi, float_t x) {
     putIntB(bb, bi, i);
 }
 
-static const int FullScoreReturnSize = 
+static const int FullScoreReturnSize = 19;
+
+static void FullScoreReturn(const lm::FullScoreReturn &ret, int8
