@@ -52,4 +52,6 @@ inline static void putFloatB(int8_t *bb, int bi, float_t x) {
 
 static const int FullScoreReturnSize = 19;
 
-static void FullScoreReturn(const lm::FullScoreReturn &ret, int8
+static void FullScoreReturn(const lm::FullScoreReturn &ret, int8_t* se, bool oov) {
+    putFloatB(se, 0, ret.prob);
+    se[4] = ret.ngram_lengt
