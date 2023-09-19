@@ -56,4 +56,6 @@ static void FullScoreReturn(const lm::FullScoreReturn &ret, int8_t* se, bool oov
     putFloatB(se, 0, ret.prob);
     se[4] = ret.ngram_length;
     se[5] = static_cast<unsigned char>(ret.independent_left);
-    
+    putLongB(se, 6, ret.extend_left);
+    putFloatB(se, 14, ret.rest);
+ 
