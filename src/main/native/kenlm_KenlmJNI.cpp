@@ -58,4 +58,7 @@ static void FullScoreReturn(const lm::FullScoreReturn &ret, int8_t* se, bool oov
     se[5] = static_cast<unsigned char>(ret.independent_left);
     putLongB(se, 6, ret.extend_left);
     putFloatB(se, 14, ret.rest);
- 
+    se[18] = static_cast<unsigned char>(oov);
+}
+
+typedef boost
