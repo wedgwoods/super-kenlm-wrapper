@@ -61,4 +61,4 @@ static void FullScoreReturn(const lm::FullScoreReturn &ret, int8_t* se, bool oov
     se[18] = static_cast<unsigned char>(oov);
 }
 
-typedef boost
+typedef boost::tokenizer<boost::char_separator<char>, StringPiece::const_iterator> Tokeni
