@@ -66,3 +66,6 @@ typedef boost::tokenizer<boost::char_separator<char>, StringPiece::const_iterato
 /*
  * Class:     kenlm_KenlmJNI
  * Method:    ConfigNew
+ * Signature: ()J
+ */
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ConfigN
