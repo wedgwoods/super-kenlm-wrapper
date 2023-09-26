@@ -70,4 +70,9 @@ typedef boost::tokenizer<boost::char_separator<char>, StringPiece::const_iterato
  */
 JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ConfigNew
   (JNIEnv *, jclass) {
-      auto *config = new lm::ngram::Co
+      auto *config = new lm::ngram::Config();
+      return reinterpret_cast<jlong>(config);
+  }
+
+/*
+ * Cla
