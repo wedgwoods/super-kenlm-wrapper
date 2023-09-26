@@ -75,4 +75,6 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ConfigNew
   }
 
 /*
- * Cla
+ * Class:     kenlm_KenlmJNI
+ * Method:    ConfigDelete
+ * Signature: (J)V
