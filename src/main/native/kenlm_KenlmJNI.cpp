@@ -80,4 +80,5 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ConfigNew
  * Signature: (J)V
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigDelete
-  (JNIEnv *, j
+  (JNIEnv *, jclass, jlong ptr) {
+      auto *config = reinterpret_cas
