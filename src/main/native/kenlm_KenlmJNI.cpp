@@ -81,4 +81,9 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ConfigNew
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigDelete
   (JNIEnv *, jclass, jlong ptr) {
-      auto *config = reinterpret_cas
+      auto *config = reinterpret_cast<lm::ngram::Config *>(ptr);
+      delete config;
+  }
+
+/*
+ * Class:     k
