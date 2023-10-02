@@ -86,4 +86,8 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigDelete
   }
 
 /*
- * Class:     k
+ * Class:     kenlm_KenlmJNI
+ * Method:    ConfigGetLoadMethod
+ * Signature: (J)I
+ */
+JNI
