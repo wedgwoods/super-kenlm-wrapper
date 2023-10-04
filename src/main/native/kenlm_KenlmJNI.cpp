@@ -91,4 +91,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigDelete
  * Signature: (J)I
  */
 JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_ConfigGetLoadMethod
-  (JN
+  (JNIEnv *, jclass, jlong ptr) {
+      auto *config = reinter
