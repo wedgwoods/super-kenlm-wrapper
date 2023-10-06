@@ -92,4 +92,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigDelete
  */
 JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_ConfigGetLoadMethod
   (JNIEnv *, jclass, jlong ptr) {
-      auto *config = reinter
+      auto *config = reinterpret_cast<lm::ngram::Config *>(ptr);
+      return config->load_meth
