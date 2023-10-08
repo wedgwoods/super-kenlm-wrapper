@@ -101,4 +101,5 @@ JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_ConfigGetLoadMethod
  * Method:    ConfigSetLoadMethod
  * Signature: (JI)V
  */
-JNIEXPORT void JNICALL Ja
+JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigSetLoadMethod
+  (JNIEnv *, jclass, jlong ptr, jint
