@@ -102,4 +102,5 @@ JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_ConfigGetLoadMethod
  * Signature: (JI)V
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigSetLoadMethod
-  (JNIEnv *, jclass, jlong ptr, jint
+  (JNIEnv *, jclass, jlong ptr, jint load_method) {
+      auto *config = reinterpret_cast<lm::ngram::
