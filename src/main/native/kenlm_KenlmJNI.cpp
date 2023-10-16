@@ -112,4 +112,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigSetLoadMethod
  * Method:    ModelLoadVirtual
  * Signature: (Ljava/lang/String;J)J
  */
-JNIEXPORT jlong JNICALL Java_kenlm_K
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
+  (JNIEnv *env, jclass, jstring path, jlong ptr
