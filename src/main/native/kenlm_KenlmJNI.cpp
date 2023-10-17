@@ -113,4 +113,6 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ConfigSetLoadMethod
  * Signature: (Ljava/lang/String;J)J
  */
 JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
-  (JNIEnv *env, jclass, jstring path, jlong ptr
+  (JNIEnv *env, jclass, jstring path, jlong ptr) {
+      auto *config = reinterpret_cast<lm::ngram::Config *>(ptr);
+
