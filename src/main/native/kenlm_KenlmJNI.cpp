@@ -116,4 +116,5 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
   (JNIEnv *env, jclass, jstring path, jlong ptr) {
       auto *config = reinterpret_cast<lm::ngram::Config *>(ptr);
 
-      const char *file_name = env->GetStringUTFChars(path, nullpt
+      const char *file_name = env->GetStringUTFChars(path, nullptr);
+      lm::base::Model *model = lm::ngram::LoadVirtual(file_name, 
