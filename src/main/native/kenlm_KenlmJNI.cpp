@@ -124,4 +124,6 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
   }
 
 /*
- * Class:   
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelDelete
+ * Signature: (J
