@@ -130,4 +130,9 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
   (JNIEnv *, jclass, jlong ptr) {
-      auto *model = reinterpret_cast<lm::
+      auto *model = reinterpret_cast<lm::base::Model *>(ptr);
+      delete model;
+  }
+
+/*
+ * Class:     kenlm_Ke
