@@ -129,4 +129,5 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_ModelLoadVirtual
  * Signature: (J)V
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
-  (JNI
+  (JNIEnv *, jclass, jlong ptr) {
+      auto *model = reinterpret_cast<lm::
