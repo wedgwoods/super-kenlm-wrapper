@@ -135,4 +135,7 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
   }
 
 /*
- * Class:     kenlm_Ke
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelBeginSentenceWrite
+ * Signature: (JJ)V
+ */
