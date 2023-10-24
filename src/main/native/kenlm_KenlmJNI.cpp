@@ -139,3 +139,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
  * Method:    ModelBeginSentenceWrite
  * Signature: (JJ)V
  */
+JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelBeginSentenceWrite
+  (J
