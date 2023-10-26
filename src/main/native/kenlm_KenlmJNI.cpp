@@ -140,4 +140,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
  * Signature: (JJ)V
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelBeginSentenceWrite
-  (J
+  (JNIEnv *, jclass, jlong _model, jlong _state) {
+      auto *
