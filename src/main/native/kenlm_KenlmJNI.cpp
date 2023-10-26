@@ -141,4 +141,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelDelete
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelBeginSentenceWrite
   (JNIEnv *, jclass, jlong _model, jlong _state) {
-      auto *
+      auto *model = reinterpret_cast<lm::base::Model *>(_model);
+      auto *sta
