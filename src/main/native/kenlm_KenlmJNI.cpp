@@ -143,4 +143,8 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelBeginSentenceWrite
   (JNIEnv *, jclass, jlong _model, jlong _state) {
       auto *model = reinterpret_cast<lm::base::Model *>(_model);
       auto *state = reinterpret_cast<lm::ngram::State *>(_state);
-  
+      model->BeginSentenceWrite(state);
+  }
+
+/*
+ * Class:     kenlm_Ke
