@@ -150,3 +150,6 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelBeginSentenceWrite
  * Class:     kenlm_KenlmJNI
  * Method:    ModelNullContextWrite
  * Signature: (JJ)V
+ */
+JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelNullContextWrite
+  (JNIEnv *, jclass, jlong _
