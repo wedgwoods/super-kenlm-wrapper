@@ -159,4 +159,6 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_ModelNullContextWrite
   }
 
 /*
- * Class:     kenlm
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelBaseScore
+ * Signature: (JJLjava/lang/St
