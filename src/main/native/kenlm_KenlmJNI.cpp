@@ -170,4 +170,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
       auto *out_state = reinterpret_cast<lm::ngram::State *>(_out_state);
 
       const char *word = env->GetStringUTFChars(_word, nullptr);
-      float ret = model->BaseScore(state, model-
+      float ret = model->BaseScore(state, model->BaseVocabulary().Index(word), out_state);
+      env->Rel
