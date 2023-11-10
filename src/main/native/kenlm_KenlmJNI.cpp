@@ -171,4 +171,7 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
 
       const char *word = env->GetStringUTFChars(_word, nullptr);
       float ret = model->BaseScore(state, model->BaseVocabulary().Index(word), out_state);
-      env->Rel
+      env->ReleaseStringUTFChars(_word, word);
+
+      return ret;
+  }
