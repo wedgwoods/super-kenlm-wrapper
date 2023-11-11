@@ -175,3 +175,8 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
 
       return ret;
   }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelBaseFullScore
+ * Si
