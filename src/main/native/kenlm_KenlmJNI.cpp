@@ -181,4 +181,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
  * Method:    ModelBaseFullScore
  * Signature: (JJLjava/lang/String;J)[B
  */
-JNIEXPORT jbyteArray JNI
+JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
+  (JNIEnv *env, jclass, j
