@@ -179,4 +179,6 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
 /*
  * Class:     kenlm_KenlmJNI
  * Method:    ModelBaseFullScore
- * Si
+ * Signature: (JJLjava/lang/String;J)[B
+ */
+JNIEXPORT jbyteArray JNI
