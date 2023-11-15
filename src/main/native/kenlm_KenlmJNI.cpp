@@ -182,4 +182,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
  * Signature: (JJLjava/lang/String;J)[B
  */
 JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
-  (JNIEnv *env, jclass, j
+  (JNIEnv *env, jclass, jlong _model, jlong _state, jstring _word, jlong _out_state) {
+      auto *mode
