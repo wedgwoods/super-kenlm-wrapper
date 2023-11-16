@@ -183,4 +183,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelBaseScore
  */
 JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
   (JNIEnv *env, jclass, jlong _model, jlong _state, jstring _word, jlong _out_state) {
-      auto *mode
+      auto *model = reinterpret_cast<lm::base::Model *>(_model);
+      auto *state 
