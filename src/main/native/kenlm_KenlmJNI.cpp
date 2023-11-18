@@ -187,4 +187,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
       auto *state = reinterpret_cast<lm::ngram::State *>(_state);
       auto *out_state = reinterpret_cast<lm::ngram::State *>(_out_state);
 
-      const cha
+      const char *word = env->GetStringUTFChars(_word, nullptr);
+      lm::WordIndex wid = m
