@@ -189,4 +189,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
 
       const char *word = env->GetStringUTFChars(_word, nullptr);
       lm::WordIndex wid = model->BaseVocabulary().Index(word);
-      lm::FullScoreReturn ret = model->BaseFullSco
+      lm::FullScoreReturn ret = model->BaseFullScore(state, wid, out_state);
+      env->ReleaseStringUTFChars(_
