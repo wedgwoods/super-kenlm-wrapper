@@ -193,4 +193,7 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
       env->ReleaseStringUTFChars(_word, word);
 
       int8_t se[FullScoreReturnSize];
-      FullScoreReturn(ret, se, wi
+      FullScoreReturn(ret, se, wid == 0);
+
+      jbyteArray array = env->NewByteArray(FullScoreReturnSize);
+  
