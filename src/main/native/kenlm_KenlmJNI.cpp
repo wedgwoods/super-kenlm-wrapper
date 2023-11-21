@@ -196,4 +196,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
       FullScoreReturn(ret, se, wid == 0);
 
       jbyteArray array = env->NewByteArray(FullScoreReturnSize);
-  
+      env->SetByteArrayRegion(array, 0, FullScoreReturnSize, se);
+      retu
