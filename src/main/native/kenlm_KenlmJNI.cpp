@@ -197,4 +197,9 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
 
       jbyteArray array = env->NewByteArray(FullScoreReturnSize);
       env->SetByteArrayRegion(array, 0, FullScoreReturnSize, se);
-      retu
+      return array;
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelS
