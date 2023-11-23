@@ -206,4 +206,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
  * Signature: (JLjava/lang/String;ZZ)F
  */
 JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
-  (JNIEnv *env, jclass, jlong _mo
+  (JNIEnv *env, jclass, jlong _model, jstring _sentence, jboolean bos, jboolean eos) {
+      auto *model = r
