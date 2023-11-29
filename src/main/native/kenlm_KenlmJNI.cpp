@@ -209,4 +209,4 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
   (JNIEnv *env, jclass, jlong _model, jstring _sentence, jboolean bos, jboolean eos) {
       auto *model = reinterpret_cast<lm::base::Model *>(_model);
       const char *sentence = env->GetStringUTFChars(_sentence, nullptr);
-      Tokenizer
+      Tokenizer tokenizer(StringPiece(sentence), boost::char_separator<char>(" ")
