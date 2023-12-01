@@ -217,3 +217,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
       } else {
           model->NullContextWrite(&state);
       }
+      float total = 0;
+      for (auto iter = tok
