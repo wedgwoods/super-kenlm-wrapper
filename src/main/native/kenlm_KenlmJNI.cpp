@@ -213,4 +213,7 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
 
       lm::ngram::State state, out_state;
       if (bos) {
-          mode
+          model->BeginSentenceWrite(&state);
+      } else {
+          model->NullContextWrite(&state);
+      }
