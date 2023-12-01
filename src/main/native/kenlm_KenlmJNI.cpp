@@ -218,4 +218,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
           model->NullContextWrite(&state);
       }
       float total = 0;
-      for (auto iter = tok
+      for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter) {
+          total += model->BaseScore(&state,
