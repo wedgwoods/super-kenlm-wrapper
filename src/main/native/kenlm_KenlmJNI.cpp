@@ -220,4 +220,7 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
       float total = 0;
       for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter) {
           total += model->BaseScore(&state, model->BaseVocabulary().Index(*iter), &out_state);
-         
+          state = out_state;
+      }
+      if (eos) {
+          total += model->
