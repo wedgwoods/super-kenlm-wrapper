@@ -223,4 +223,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
           state = out_state;
       }
       if (eos) {
-          total += model->
+          total += model->BaseScore(&state, model->BaseVocabulary().EndSentence(), &out_state);
+      }
