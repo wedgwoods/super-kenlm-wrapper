@@ -227,4 +227,9 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
       }
 
       env->ReleaseStringUTFChars(_sentence, sentence);
-   
+      return total;
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method: 
