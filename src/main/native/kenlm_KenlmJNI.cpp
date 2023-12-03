@@ -225,3 +225,6 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
       if (eos) {
           total += model->BaseScore(&state, model->BaseVocabulary().EndSentence(), &out_state);
       }
+
+      env->ReleaseStringUTFChars(_sentence, sentence);
+   
