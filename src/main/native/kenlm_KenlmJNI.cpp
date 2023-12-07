@@ -234,3 +234,6 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
  * Class:     kenlm_KenlmJNI
  * Method:    ModelPerplexity
  * Signature: (JLjava/lang/String;)D
+ */
+JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
+  (JNIEnv *env, jclass, jl
