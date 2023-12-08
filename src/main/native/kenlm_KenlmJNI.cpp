@@ -238,4 +238,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
 JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
   (JNIEnv *env, jclass, jlong _model, jstring _sentence) {
       auto *model = reinterpret_cast<lm::base::Model *>(_model);
-      const char *sentence = env->G
+      const char *sentence = env->GetStringUTFChars(_sentence, nullptr);
+      Tokenizer tokenizer(Strin
