@@ -236,4 +236,5 @@ JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
  * Signature: (JLjava/lang/String;)D
  */
 JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
-  (JNIEnv *env, jclass, jl
+  (JNIEnv *env, jclass, jlong _model, jstring _sentence) {
+      auto *model = reinterpret_cast
