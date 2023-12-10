@@ -241,4 +241,5 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
       const char *sentence = env->GetStringUTFChars(_sentence, nullptr);
       Tokenizer tokenizer(StringPiece(sentence), boost::char_separator<char>(" "));
 
-      l
+      lm::ngram::State state, out_state;
+      model->BeginSentenceWrite(&state)
