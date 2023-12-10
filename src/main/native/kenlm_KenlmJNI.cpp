@@ -245,4 +245,5 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
       model->BeginSentenceWrite(&state);
       float total = 0;
       int words = 1;
-      for (auto iter = tokeni
+      for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter, ++words) {
+ 
