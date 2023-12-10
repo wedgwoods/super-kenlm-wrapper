@@ -242,4 +242,7 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
       Tokenizer tokenizer(StringPiece(sentence), boost::char_separator<char>(" "));
 
       lm::ngram::State state, out_state;
-      model->BeginSentenceWrite(&state)
+      model->BeginSentenceWrite(&state);
+      float total = 0;
+      int words = 1;
+      for (auto iter = tokeni
