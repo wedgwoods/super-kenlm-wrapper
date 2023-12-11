@@ -246,4 +246,4 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
       float total = 0;
       int words = 1;
       for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter, ++words) {
- 
+          total += model->BaseScore(&state, model->BaseVocabulary().Index(*ite
