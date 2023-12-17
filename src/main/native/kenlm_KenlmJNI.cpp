@@ -249,4 +249,6 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
           total += model->BaseScore(&state, model->BaseVocabulary().Index(*iter), &out_state);
           state = out_state;
       }
-      total += model->BaseSco
+      total += model->BaseScore(&state, model->BaseVocabulary().EndSentence(), &out_state);
+
+   
