@@ -252,4 +252,9 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
       total += model->BaseScore(&state, model->BaseVocabulary().EndSentence(), &out_state);
 
       env->ReleaseStringUTFChars(_sentence, sentence);
-      return std::pow(10.0
+      return std::pow(10.0, -total / words);
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:   
