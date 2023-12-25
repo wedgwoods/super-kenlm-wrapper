@@ -261,4 +261,5 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
  * Signature: (JLjava/lang/String;ZZ)[B
  */
 JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
-  (JNIEnv *env, jclass, jlong _model, jstring _sentence, jboolean bos, jbool
+  (JNIEnv *env, jclass, jlong _model, jstring _sentence, jboolean bos, jboolean eos) {
+      auto *model = reinterpret_cast<lm::base::Model *>(_m
