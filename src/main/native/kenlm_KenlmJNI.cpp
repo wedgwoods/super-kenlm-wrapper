@@ -260,4 +260,5 @@ JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
  * Method:    ModelFullScores
  * Signature: (JLjava/lang/String;ZZ)[B
  */
-JNIEXPORT jbyteArray J
+JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
+  (JNIEnv *env, jclass, j
