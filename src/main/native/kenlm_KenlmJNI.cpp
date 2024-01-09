@@ -274,4 +274,7 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       }
 
       int size = 0;
-      for 
+      for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter) {
+          ++size;
+      }
+   
