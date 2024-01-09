@@ -270,4 +270,8 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       if (bos) {
           model->BeginSentenceWrite(&state);
       } else {
-      
+          model->NullContextWrite(&state);
+      }
+
+      int size = 0;
+      for 
