@@ -268,3 +268,6 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
 
       lm::ngram::State state, out_state;
       if (bos) {
+          model->BeginSentenceWrite(&state);
+      } else {
+      
