@@ -277,4 +277,7 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter) {
           ++size;
       }
-   
+      if (eos) {
+          ++size;
+      }
+      auto *se = new int8_t[s
