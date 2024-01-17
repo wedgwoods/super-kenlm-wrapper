@@ -280,4 +280,7 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       if (eos) {
           ++size;
       }
-      auto *se = new int8_t[s
+      auto *se = new int8_t[size * FullScoreReturnSize];
+
+      auto *bb = se;
+      for 
