@@ -283,4 +283,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       auto *se = new int8_t[size * FullScoreReturnSize];
 
       auto *bb = se;
-      for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter, bb +=
+      for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter, bb += FullScoreReturnSize) {
+          lm::WordIndex wid = model->BaseVoc
