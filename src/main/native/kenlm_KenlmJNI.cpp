@@ -286,4 +286,7 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
       for (auto iter = tokenizer.begin(); iter != tokenizer.end(); ++iter, bb += FullScoreReturnSize) {
           lm::WordIndex wid = model->BaseVocabulary().Index(*iter);
           FullScoreReturn(model->BaseFullScore(&state, wid, &out_state), bb, wid == 0);
-          state = out_
+          state = out_state;
+      }
+      if (eos) {
+          FullScoreReturn(model->BaseFu
