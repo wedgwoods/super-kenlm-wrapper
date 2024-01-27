@@ -289,4 +289,8 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
           state = out_state;
       }
       if (eos) {
-          FullScoreReturn(model->BaseFullScore(&state, model->BaseVocabulary().EndSentence(), &out_state), bb, false
+          FullScoreReturn(model->BaseFullScore(&state, model->BaseVocabulary().EndSentence(), &out_state), bb, false);
+      }
+
+      env->ReleaseStringUTFChars(_sentence, sentence);
+      jb
