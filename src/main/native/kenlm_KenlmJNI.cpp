@@ -300,4 +300,8 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
   }
 
 /*
- * Class:
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateNew
+ * Signature: ()J
+ */
+JNIEXPO
