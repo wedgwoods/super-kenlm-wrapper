@@ -294,4 +294,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
 
       env->ReleaseStringUTFChars(_sentence, sentence);
       jbyteArray array = env->NewByteArray(size * FullScoreReturnSize);
-      env->S
+      env->SetByteArrayRegion(array, 0, size * FullScoreReturnSize, se);
+  
