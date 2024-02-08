@@ -304,4 +304,5 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
  * Method:    StateNew
  * Signature: ()J
  */
-JNIEXPO
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateNew
+  (JNIEnv *, jclass) 
