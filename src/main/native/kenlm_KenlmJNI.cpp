@@ -307,4 +307,9 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
 JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateNew
   (JNIEnv *, jclass) {
       auto *state = new lm::ngram::State();
-      return reinterpret_ca
+      return reinterpret_cast<jlong>(state);
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method: 
