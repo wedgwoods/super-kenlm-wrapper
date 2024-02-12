@@ -317,4 +317,8 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateNew
  */
 JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_StateDelete
   (JNIEnv *, jclass, jlong ptr) {
-      auto *stat
+      auto *state = reinterpret_cast<lm::ngram::State *>(ptr);
+      delete state;
+  }
+
+/*
