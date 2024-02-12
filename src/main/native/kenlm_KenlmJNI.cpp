@@ -315,4 +315,6 @@ JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateNew
  * Method:    StateDelete
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_ken
+JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_StateDelete
+  (JNIEnv *, jclass, jlong ptr) {
+      auto *stat
