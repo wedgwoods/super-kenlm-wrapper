@@ -322,3 +322,6 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_StateDelete
   }
 
 /*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateCompare
+ * Si
