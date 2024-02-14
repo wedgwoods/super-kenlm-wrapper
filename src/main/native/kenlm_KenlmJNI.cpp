@@ -328,4 +328,5 @@ JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_StateDelete
  */
 JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_StateCompare
   (JNIEnv *, jclass, jlong p1, jlong p2) {
-      auto 
+      auto *s1 = reinterpret_cast<lm::ngram::State *>(p1);
+      auto *s2 = reinterpr
