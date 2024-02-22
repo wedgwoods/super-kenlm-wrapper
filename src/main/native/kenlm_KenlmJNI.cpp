@@ -330,4 +330,10 @@ JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_StateCompare
   (JNIEnv *, jclass, jlong p1, jlong p2) {
       auto *s1 = reinterpret_cast<lm::ngram::State *>(p1);
       auto *s2 = reinterpret_cast<lm::ngram::State *>(p2);
-      return s1->Compare(*s
+      return s1->Compare(*s2);
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateEquals
+ * Signature: (
