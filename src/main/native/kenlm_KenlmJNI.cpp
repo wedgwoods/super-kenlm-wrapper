@@ -336,4 +336,7 @@ JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_StateCompare
 /*
  * Class:     kenlm_KenlmJNI
  * Method:    StateEquals
- * Signature: (
+ * Signature: (JJ)Z
+ */
+JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
+  (JNIEnv *,
