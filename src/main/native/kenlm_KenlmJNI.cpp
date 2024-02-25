@@ -347,4 +347,7 @@ JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
 
 /*
  * Class:     kenlm_KenlmJNI
- * Method:
+ * Method:    StateHashValue
+ * Signature: (J)J
+ */
+JNIEXPORT jlong JNICALL Ja
