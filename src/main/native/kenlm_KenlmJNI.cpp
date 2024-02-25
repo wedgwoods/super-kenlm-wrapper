@@ -340,4 +340,5 @@ JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_StateCompare
  */
 JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
   (JNIEnv *, jclass, jlong p1, jlong p2) {
-      auto *s1 = reinterpret_cast<lm::ngram::St
+      auto *s1 = reinterpret_cast<lm::ngram::State *>(p1);
+      auto *s2 = reinterpret_cast<lm::
