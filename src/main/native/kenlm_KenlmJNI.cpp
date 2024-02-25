@@ -342,4 +342,9 @@ JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
   (JNIEnv *, jclass, jlong p1, jlong p2) {
       auto *s1 = reinterpret_cast<lm::ngram::State *>(p1);
       auto *s2 = reinterpret_cast<lm::ngram::State *>(p2);
-      return static_cast<jboolean
+      return static_cast<jboolean>(s1 == s2);
+  }
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:
