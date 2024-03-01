@@ -352,3 +352,5 @@ JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
  */
 JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateHashValue
   (JNIEnv *, jclass, jlong ptr) {
+      auto *state = reinterpret_cast<lm::ngram::State *>(ptr);
+      
