@@ -350,4 +350,5 @@ JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
  * Method:    StateHashValue
  * Signature: (J)J
  */
-JNIEXPORT jlong JNICALL Ja
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateHashValue
+  (JNIEnv *, jclass, jlong ptr) {
