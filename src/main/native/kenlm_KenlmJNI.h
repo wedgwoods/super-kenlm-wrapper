@@ -89,3 +89,64 @@ JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelBaseFullScore
   (JNIEnv *, jclass, jlong, jlong, jstring, jlong);
 
 /*
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelScore
+ * Signature: (JLjava/lang/String;ZZ)F
+ */
+JNIEXPORT jfloat JNICALL Java_kenlm_KenlmJNI_ModelScore
+  (JNIEnv *, jclass, jlong, jstring, jboolean, jboolean);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelPerplexity
+ * Signature: (JLjava/lang/String;)D
+ */
+JNIEXPORT jdouble JNICALL Java_kenlm_KenlmJNI_ModelPerplexity
+  (JNIEnv *, jclass, jlong, jstring);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    ModelFullScores
+ * Signature: (JLjava/lang/String;ZZ)[B
+ */
+JNIEXPORT jbyteArray JNICALL Java_kenlm_KenlmJNI_ModelFullScores
+  (JNIEnv *, jclass, jlong, jstring, jboolean, jboolean);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateNew
+ * Signature: ()J
+ */
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateNew
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateDelete
+ * Signature: (J)V
+ */
+JNIEXPORT void JNICALL Java_kenlm_KenlmJNI_StateDelete
+  (JNIEnv *, jclass, jlong);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateCompare
+ * Signature: (JJ)I
+ */
+JNIEXPORT jint JNICALL Java_kenlm_KenlmJNI_StateCompare
+  (JNIEnv *, jclass, jlong, jlong);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateEquals
+ * Signature: (JJ)Z
+ */
+JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
+  (JNIEnv *, jclass, jlong, jlong);
+
+/*
+ * Class:     kenlm_KenlmJNI
+ * Method:    StateHashValue
+ * Signature: (J)J
+ */
+JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateHashValue
