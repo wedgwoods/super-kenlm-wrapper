@@ -5,4 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import j
+import java.util.List;
+
+public class ModelTest {
+
+    private Model model;
