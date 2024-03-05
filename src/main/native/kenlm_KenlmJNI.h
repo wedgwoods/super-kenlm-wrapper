@@ -150,3 +150,9 @@ JNIEXPORT jboolean JNICALL Java_kenlm_KenlmJNI_StateEquals
  * Signature: (J)J
  */
 JNIEXPORT jlong JNICALL Java_kenlm_KenlmJNI_StateHashValue
+  (JNIEnv *, jclass, jlong);
+
+#ifdef __cplusplus
+}
+#endif
+#endif
