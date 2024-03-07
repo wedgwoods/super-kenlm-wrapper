@@ -13,4 +13,9 @@ public class ModelTest {
 
     @Before
     public void setUp() {
-        model = new Model("test.arpa
+        model = new Model("test.arpa", new Config());
+    }
+
+    @After
+    public void tearDown() {
+   
