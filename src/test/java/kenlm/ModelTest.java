@@ -10,3 +10,7 @@ import java.util.List;
 public class ModelTest {
 
     private Model model;
+
+    @Before
+    public void setUp() {
+        model = new Model("test.arpa
