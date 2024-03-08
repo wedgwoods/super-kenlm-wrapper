@@ -23,4 +23,8 @@ public class ModelTest {
 
     @Test
     public void testScore() {
-        Assert.assertEquals(-49.579346, model.score("this is a sentence .", tru
+        Assert.assertEquals(-49.579346, model.score("this is a sentence .", true, true), 0.000001);
+    }
+
+    @Test
+    public void testFullSc
