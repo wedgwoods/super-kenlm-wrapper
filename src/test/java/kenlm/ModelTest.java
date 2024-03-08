@@ -22,4 +22,5 @@ public class ModelTest {
     }
 
     @Test
-    public void testScore() 
+    public void testScore() {
+        Assert.assertEquals(-49.579346, model.score("this is a sentence .", tru
