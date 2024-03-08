@@ -18,4 +18,8 @@ public class ModelTest {
 
     @After
     public void tearDown() {
-   
+        model.close();
+    }
+
+    @Test
+    public void testScore() 
