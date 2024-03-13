@@ -27,4 +27,5 @@ public class ModelTest {
     }
 
     @Test
-    public void testFullSc
+    public void testFullScores() {
+        List<FullScoreReturn> returns = model.fullScor
