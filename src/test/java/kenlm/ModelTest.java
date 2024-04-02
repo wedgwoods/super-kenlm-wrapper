@@ -28,4 +28,6 @@ public class ModelTest {
 
     @Test
     public void testFullScores() {
-        List<FullScoreReturn> returns = model.fullScor
+        List<FullScoreReturn> returns = model.fullScores("this is a sentence .", true, true);
+
+        Assert.assertEquals(6, re
