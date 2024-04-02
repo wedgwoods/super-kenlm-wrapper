@@ -30,4 +30,5 @@ public class ModelTest {
     public void testFullScores() {
         List<FullScoreReturn> returns = model.fullScores("this is a sentence .", true, true);
 
-        Assert.assertEquals(6, re
+        Assert.assertEquals(6, returns.size());
+        Assert.assertEquals(-2.4106083, returns.get(0).getLogProb(),
