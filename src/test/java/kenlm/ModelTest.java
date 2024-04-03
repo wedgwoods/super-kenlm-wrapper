@@ -31,4 +31,5 @@ public class ModelTest {
         List<FullScoreReturn> returns = model.fullScores("this is a sentence .", true, true);
 
         Assert.assertEquals(6, returns.size());
-        Assert.assertEquals(-2.4106083, returns.get(0).getLogProb(),
+        Assert.assertEquals(-2.4106083, returns.get(0).getLogProb(), 0.0000001);
+        Assert.assertEquals(1, returns.get(0).getNgram
