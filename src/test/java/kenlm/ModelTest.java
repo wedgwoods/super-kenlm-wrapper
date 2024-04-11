@@ -36,4 +36,5 @@ public class ModelTest {
         Assert.assertEquals(-21.6878719329834, returns.get(1).getLogProb(), 0.0000001);
         Assert.assertEquals(1, returns.get(1).getNgramLength());
         Assert.assertEquals(-1.5869710445404053, returns.get(2).getLogProb(), 0.0000001);
-    
+        Assert.assertEquals(1, returns.get(2).getNgramLength());
+        
