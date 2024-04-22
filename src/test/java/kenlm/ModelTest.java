@@ -48,4 +48,5 @@ public class ModelTest {
     @Test
     public void testBaseScore() {
         State state = new State();
-    
+        State state1 = new State();
+        model.beginSentenceWrite(state);
