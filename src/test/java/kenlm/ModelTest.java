@@ -46,4 +46,6 @@ public class ModelTest {
     }
 
     @Test
-    public 
+    public void testBaseScore() {
+        State state = new State();
+    
