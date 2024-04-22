@@ -50,3 +50,6 @@ public class ModelTest {
         State state = new State();
         State state1 = new State();
         model.beginSentenceWrite(state);
+        float accum = 0;
+
+        accum += model.baseScore(state, "a", sta
