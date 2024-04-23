@@ -55,4 +55,5 @@ public class ModelTest {
         accum += model.baseScore(state, "a", state1);
         State.swap(state, state1);
 
-        accum 
+        accum += model.baseScore(state, "sentence", state1);
+        State.swap(state, state
