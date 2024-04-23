@@ -52,4 +52,7 @@ public class ModelTest {
         model.beginSentenceWrite(state);
         float accum = 0;
 
-        accum += model.baseScore(state, "a", sta
+        accum += model.baseScore(state, "a", state1);
+        State.swap(state, state1);
+
+        accum 
