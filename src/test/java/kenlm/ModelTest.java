@@ -59,4 +59,6 @@ public class ModelTest {
         State.swap(state, state1);
         Assert.assertEquals(model.score("a sentence", true, false), accum, 1e-3);
 
-        accum += model.baseScore(state, "</s>", st
+        accum += model.baseScore(state, "</s>", state1);
+        State.swap(state, state1);
+        Assert.assertEquals(model
