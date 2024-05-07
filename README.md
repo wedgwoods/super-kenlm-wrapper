@@ -1,1 +1,1 @@
-# super-kenlm-wr
+# super-kenlm-wrapper\n\n[![Build Status](https://travis-ci.org/wedgwoods/super-kenlm-wra
